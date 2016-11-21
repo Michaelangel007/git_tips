@@ -211,5 +211,5 @@ Note: Branch is usually `master`
 
 * Add `png` to `README.md`: `![alt tag](http://url/to/img.png)`
 
-* [x] TODO list: use `* [x]`
+* [x] TODO list: use `* [x] Task`
 
