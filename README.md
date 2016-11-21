@@ -2,12 +2,12 @@
 
 # Table of Contents
 
-* Legend
-* Branches
-* Config
-* Commit
-* Diffs
-* Preview
+* [Legend](https://github.com/Michaelangel007/git_tips#legend)
+* [Branches](https://github.com/Michaelangel007/git_tips#branches)
+* [Config](https://github.com/Michaelangel007/git_tips#config)
+* [Commit](https://github.com/Michaelangel007/git_tips#commit)
+* [Diffs](https://github.com/Michaelangel007/git_tips#diffs)
+* [Preview](https://github.com/Michaelangel007/git_tips#preview)
 
 ## Legend:
 
