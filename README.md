@@ -213,3 +213,8 @@ Note: Branch is usually `master`
 
 * [x] TODO list: use `* [x] Task`
 
+
+# See:
+
+* [Git Tips](https://github.com/Michaelangel007/git_tips)
+* [Git Cheat Sheet](https://github.com/Michaelangel007/git_cheat_sheet)
