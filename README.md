@@ -103,13 +103,15 @@
 
 * Create new repo: `git init`
 
+* Commit file: `git add <file>; git commit -m "Message"`
+
 * Push to Remote
 
-    |Description| Command                                                         |
-    |:----------|:----------------------------------------------------------------|
-    |Set remote | `git remote add origin https://github.com/<User>/<project>.git` |
-    |Push remote| `git push -u origin master`                                     |
-
+    |Description          | Command                                                         |
+    |:--------------------|:----------------------------------------------------------------|
+    |Set remote (initial) | `git remote add origin https://github.com/<User>/<project>.git` |
+    |Push remote (initial)| `git push -u origin master`                                     |
+    |Push remote          | `git push`                                                      |
 
 * Append files to last commit
 
