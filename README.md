@@ -109,6 +109,7 @@
 
     |Description          | Command                                                         |
     |:--------------------|:----------------------------------------------------------------|
+    |View remote          | `git remote -v`                                                 |
     |Set remote (initial) | `git remote add origin https://github.com/<User>/<project>.git` |
     |Push remote (initial)| `git push -u origin master`                                     |
     |Push remote          | `git push`                                                      |
@@ -153,7 +154,6 @@
 * Show SHA1 hash of last commit: `git log -1 --format=format:%H`
 
 * Undo: `git reset --hard <commit>`
-
 
 ## Diffs
 
