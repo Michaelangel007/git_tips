@@ -132,6 +132,16 @@
     git diff-tree --no-commit-id -r --name-status $(git log -1 --format=format:%H)
     ```
 
+* Merge
+
+  |Description|Command                         |
+  |:----------|:-------------------------------|
+  |Merge start|`git mergetool`                 |
+  |Merge done |`git commit`                    |
+
+ * **Note** 1: mergetool may default to _none_
+ * **Note** 2: Should NOT need to force push: `git push origin master --force`
+
 * Move or Rename file: `git mv <old> <new>`
 
 * (Add) partial change(s) of file: `git -p <file>` (See [SO #1085162](http://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git))
@@ -160,7 +170,7 @@
 
 To use P4Merge for Diffs and 3-Way Merges instead of built-in git tools:
 
-* For diff
+* For `git difftool`
 
     ```
     git config --global diff.tool p4merge
@@ -183,7 +193,7 @@ To use P4Merge for Diffs and 3-Way Merges instead of built-in git tools:
         prompt = false
     ```
 
-* For merge
+* For `git mergetool`
 
     ```
     git config --global merge.tool p4merge
