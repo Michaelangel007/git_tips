@@ -121,7 +121,7 @@ Legend of commit hash aliases:
 * Add **partial change(s)** of file: `git add -p <file>` (See [SO #1085162](http://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git))
 
 * Commit staged file(s): `git commit -m "Message"`
-  * Add and commit changed files only: `git commit -a -m "Message"`
+  * Add and commit all changed files only: `git commit -a -m "Message"`
 
 * Append files to last commit
 
