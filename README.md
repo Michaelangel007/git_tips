@@ -155,7 +155,7 @@ Legend of commit hash aliases:
   |:------------------------|:-------------------------------|
   |Show SHA1 of last commit |`git log -1 --format=format:%H` |
   |Merge start              |`git mergetool`                 |
-  |Undo (**local** merge)   |`git reset --hard <commit>``    |
+  |Undo (**local** merge)   |`git reset --hard <commit>`     |
   |Merge done               |`git commit`                    |
   |Undo (**remote** merge)  |`git revert -m 1 <commit>`      |
 
