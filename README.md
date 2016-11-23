@@ -148,7 +148,7 @@ Legend of commit hash aliases:
     or of last commit:
 
     ```
-    git diff-tree --no-commit-id -r --name-status $(git log -1 --format=format:%H)
+    git diff-tree --no-commit-id -r --name-status $(git log -2 --format=format:%H)
     ```
 
 * Merge
