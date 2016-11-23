@@ -115,7 +115,7 @@ Legend of commit hash aliases:
 * Show state of local files (_staged_, _modified_, _untracked_): `git status --short`
 
 * Add (new or existing) file to be staged: `git add <file>`
-  * Undo add to staged: `git reset <file>`
+  * Undo file from add (unstage): `git reset <file>`
 
 * Add **partial change(s)** of file: `git add -p <file>` (See [SO #1085162](http://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git))
 
