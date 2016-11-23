@@ -152,13 +152,13 @@ Legend of commit hash aliases:
   |Merge done               |`git commit`                    |
   |Undo (**remote** merge)  |`git revert -m 1 <commit>`      |
 
- **Notes:**
+  **Notes:**
 
- * mergetool may default to _none_
- * Should NOT need to force push: `git push origin master --force`
- * Undo remote merge see [SO #11722533](http://stackoverflow.com/questions/11722533/rollback-a-git-merge)
-  * `-m 1` first parent of the merge commit on the master branch
-  * `-m 2` first parent on the develop branch where the merge came from initially
+  * mergetool may default to _none_
+  * Should NOT need to force push: `git push origin master --force`
+  * Undo remote merge see [SO #11722533](http://stackoverflow.com/questions/11722533/rollback-a-git-merge)
+    * `-m 1` first parent of the merge commit on the master branch
+    * `-m 2` first parent on the develop branch where the merge came from initially
 
 * Move or Rename file: `git mv <old> <new>`
 
