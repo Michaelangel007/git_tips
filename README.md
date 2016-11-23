@@ -109,6 +109,7 @@ Legend of commit hash aliases:
 |`HEAD`      |Current head                         |
 |`HEAD~#`    |Previous #-th commit relative to head|
 |`<commit>^` |Parent of specific commit            |
+|`<commit>^^`|Grand-parent of specific commit      |
 
 * Create new repo: `git init`
 
