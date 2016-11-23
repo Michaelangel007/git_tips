@@ -162,7 +162,7 @@ Legend of commit hash aliases:
 
   **Notes:**
 
-  * mergetool may default to _none_
+  * `mergetool` may default to _none_
   * Should NOT need to force push: `git push origin master --force`
   * Undo remote merge see [SO #11722533](http://stackoverflow.com/questions/11722533/rollback-a-git-merge)
     * `-m 1` first parent of the merge commit on the master branch
