@@ -112,6 +112,8 @@ Legend of commit hash aliases:
 
 * Create new repo: `git init`
 
+* Show state of local files (_staged_, _modified_, _untracked_): `git status --short`
+
 * Add (new or existing) file to be staged: `git add <file>`
   * Undo add to staged: `git reset <file>`
 
