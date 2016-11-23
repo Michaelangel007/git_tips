@@ -180,11 +180,11 @@ Legend of commit hash aliases:
   | File for last `#` commits | `git show -# <file>`                                  | |
   | Log _all_ commits         | `git log`                                             | |
   | Log _last `#`_ commits    | `git log -#`                                          | |
-  | Log summary               | `git log -2 --format=format:%B`                       |<pre>Merge branch 'master' of https://...<br><br>Move ...</pre>                                              |
+  | Log summary               | `git log -2 --format=%B`                              |<pre>Merge branch 'master' of https://...<br><br>Move ...</pre>                                              |
   | Log of filenames only     | `git log -2 --name-only --pretty=format:   [<branch>]`|<pre><br>README.md </pre>                                                                                    |
   | Log of hash + filenames   | `git log -2 --name-only --pretty=format:%H [<branch>]`|<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br>README.md </pre>|
   | Log of hash, summary, file| `git log -2 --name-only --oneline`                    |<pre>868b8a2 Merge branch 'master' of https://...<br>Move ...<br>README.md</pre>                             |
-  | SHA1 hash of last commit  | `git log -2 --format=format:%H`                       |<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98</pre>              |
+  | SHA1 hash of last commit  | `git log -2 --format:%H`                              |<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98</pre>              |
   | List of changed filenames | `git diff-tree --no-commit-id -r --name-status HEAD^` |<pre>M      README.md</pre>                                                                                  |
   | Summary of last commit +/-| `git diff --stat HEAD^!`                              |<pre> README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)</pre>                          |
 
