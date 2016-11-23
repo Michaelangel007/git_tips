@@ -108,6 +108,7 @@ Legend of commit hash aliases:
 |`<commit>`  |Specific commit                      |
 |`HEAD`      |Current head                         |
 |`HEAD~#`    |Previous #-th commit relative to head|
+|`HEAD^`     |Parent of head                       |
 |`<commit>^` |Parent of specific commit            |
 |`<commit>^^`|Grand-parent of specific commit      |
 
