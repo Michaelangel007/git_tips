@@ -173,14 +173,18 @@ Legend of commit hash aliases:
 
 * Show
 
-  |Description               |Command                                          |
-  |:-------------------------|:------------------------------------------------|
-  | File at specific commit  | `git show --format=format:%d <commit>:[<file>]` |
-  | File for last `#` commits| `git show -# <file>`                            |
-  | Log _all_ commits        | `git log`                                       |
-  | Log _last `#`_ commits   | `git log -#`                                    |
-  | SHA1 hash of all commits | `git log    --format=format:%H`                 |
-  | SHA1 hash of last commit | `git log -1 --format=format:%H`                 |
+  |Description                |Command                                              |
+  |:--------------------------|:----------------------------------------------------|
+  | File at specific commit   | `git show --format=format:%d <commit>:[<file>]`     |
+  | File for last `#` commits | `git show -# <file>`                                |
+  | Log _all_ commits         | `git log`                                           |
+  | Log _last `#`_ commits    | `git log -#`                                        |
+  | Log summary               | `git log    --format=format:%B`                     |
+  | Log of filenames only     | `git log    --name-only --pretty=format:   <branch>`|
+  | Log of hash + filenames   | `git log    --name-only --pretty=format:%H <branch>`|
+  | Summary of last commit +/-| `git diff --stat HEAD^!`                            |
+  | SHA1 hash of all commits  | `git log    --format=format:%H`                     |
+  | SHA1 hash of last commit  | `git log -1 --format=format:%H`                     |
 
   **Note:**
 
