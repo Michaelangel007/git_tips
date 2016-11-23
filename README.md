@@ -171,7 +171,7 @@ Legend of commit hash aliases:
 
   |Description               |Command                                          |
   |:-------------------------|:------------------------------------------------|
-  | File at commit           | `git show --format=format:%d <commit>:[<file>]` |
+  | File at specific commit  | `git show --format=format:%d <commit>:[<file>]` |
   | File for last `#` commits| `git show -# <file>`                            |
   | Log _all_ commits        | `git log`                                       |
   | Log _last `#`_ commits   | `git log -#`                                    |
