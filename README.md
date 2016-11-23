@@ -205,6 +205,10 @@ Legend of commit hash aliases:
 
 * View Whitespace
 
+  * Use: `git diff --ws-error-highlight=all`
+
+  * Make alias
+
     ```
     git config --global alias.df 'diff --ws-error-highlight=all'
     git df <file>
