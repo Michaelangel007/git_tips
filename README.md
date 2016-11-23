@@ -101,6 +101,15 @@
 
 ## Commit
 
+Legend of commit hash aliases:
+
+|Alias       |Description                          |
+|:-----------|:------------------------------------|
+|`<commit>`  |Specific commit                      |
+|`HEAD`      |Current head                         |
+|`HEAD~#`    |Previous #-th commit relative to head|
+|`<commit>^` |Parent of specific commit            |
+
 * Create new repo: `git init`
 
 * Commit file: `git add <file>; git commit -m "Message"`
