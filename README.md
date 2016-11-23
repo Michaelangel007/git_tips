@@ -133,7 +133,7 @@ Legend of commit hash aliases:
 
     |Description          | Command                                                         |
     |:--------------------|:----------------------------------------------------------------|
-    |View remote          | `git remote -v`                                                 |
+    |View remote URLs set | `git remote -v`                                                 |
     |Set remote (initial) | `git remote add origin https://github.com/<User>/<project>.git` |
     |Push remote (initial)| `git push -u origin master`                                     |
     |Push remote          | `git push`                                                      |
