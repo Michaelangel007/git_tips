@@ -173,13 +173,6 @@ Legend of commit hash aliases:
 
 * Show
 
-  |Description                |Command                                                |Example|
-  |:--------------------------|:------------------------------------------------------|:------|
-  | File at specific commit   | `git show --format=format:%d <commit>:[<file>]`       | |
-  | File for last `#` commits | `git show -# <file>`                                  | |
-  | Log _all_ commits         | `git log`                                             | |
-  | Log _last `#`_ commits    | `git log -#`                                          | |
-
   **Note:**
 
   * Show is _relative_ to **root of repository**, _NOT_ your current directory.
