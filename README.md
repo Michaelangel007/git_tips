@@ -112,7 +112,19 @@ Legend of commit hash aliases:
 
 * Create new repo: `git init`
 
-* Commit (new or existing) file: `git add <file>; git commit -m "Message"`
+* Add (new or existing) file to be staged: `git add <file>`
+  * Undo add to staged: `git reset <file>`
+
+* Add **partial change(s)** of file: `git add -p <file>` (See [SO #1085162](http://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git))
+
+* Commit staged file(s): `git commit -m "Message"`
+
+* Append files to last commit
+
+    ```
+    git add <file>
+    git commit --amend
+    ```
 
 * Push to Remote
 
@@ -122,13 +134,6 @@ Legend of commit hash aliases:
     |Set remote (initial) | `git remote add origin https://github.com/<User>/<project>.git` |
     |Push remote (initial)| `git push -u origin master`                                     |
     |Push remote          | `git push`                                                      |
-
-* Append files to last commit
-
-    ```
-    git add <file>
-    git commit --amend
-    ```
 
 * List file names only
 
@@ -161,8 +166,6 @@ Legend of commit hash aliases:
     * `-m 2` first parent on the develop branch where the merge came from initially
 
 * Move or Rename file: `git mv <old> <new>`
-
-* (Add) partial change(s) of file: `git -p <file>` (See [SO #1085162](http://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git))
 
 * Show
 
