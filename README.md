@@ -195,6 +195,7 @@ Legend of commit hash aliases:
   |Before add, all    file changes| `git diff`                 |
   |Before add, single file changes| `git diff <file>`          |
   |After  add, single file changes| `git diff --staged <file>` |
+  |Compare to previous commit     | `git diff HEAD^`           |
 
 * View Whitespace
 
