@@ -259,6 +259,8 @@ Note: Branch is usually `master`
 
 * Add `png` to `README.md`: `![alt tag](http://url/to/img.png)`
 
+* Escape `|` in tables: [SO 17319940]()http://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table/17320389
+
 * [x] TODO list: use `* [x] Task`
 
 
