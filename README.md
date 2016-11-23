@@ -112,7 +112,7 @@ Legend of commit hash aliases:
 
 * Create new repo: `git init`
 
-* Commit file: `git add <file>; git commit -m "Message"`
+* Commit (new or existing) file: `git add <file>; git commit -m "Message"`
 
 * Push to Remote
 
