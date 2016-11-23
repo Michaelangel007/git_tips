@@ -177,6 +177,7 @@ Legend of commit hash aliases:
   |                           | `git diff-tree --no-commit-id -r --name-status <commit>`| |
   | ... 2nd last commit       | `git diff-tree --no-commit-id -r --name-status $(git log -2 --format=format:%H)`| |
   | Summary of last commit +/-| `git diff --stat HEAD^!`                              |<pre> README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)</pre>                          |
+  | Summary of +/- changes    | `git show --stat <commit>`                            |<pre> commit b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br> Author: ...<br> Date:   ...<br> <br>    ...description...<br><br> README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)<br></pre>|
 
   **Note:**
 
