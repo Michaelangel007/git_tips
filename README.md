@@ -164,14 +164,20 @@ Legend of commit hash aliases:
 
 * (Add) partial change(s) of file: `git -p <file>` (See [SO #1085162](http://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git))
 
-* Show contents of file at commit: `git show --format=format:%d <commit>:[<file>]`
+* Show
 
-* Show contents of file for last `#` commits: `git show -# <file>`
+  |Description               |Command                                          |
+  |:-------------------------|:------------------------------------------------|
+  | File at commit           | `git show --format=format:%d <commit>:[<file>]` |
+  | File for last `#` commits| `git show -# <file>`                            |
+  | Log _all_ commits        | `git log`                                       |
+  | Log _last `#`_ commits   | `git log -#`                                    |
+  | SHA1 hash of all commits | `git log    --format=format:%H`                 |
+  | SHA1 hash of last commit | `git log -1 --format=format:%H`                 |
 
-* Show last `#` commits: `git log -#`
+  **Note:**
 
-* Show SHA1 hash of all commits: `git log    --format=format:%H`
-* Show SHA1 hash of last commit: `git log -1 --format=format:%H`
+  * Show is _relative_ to **root of repository**, _NOT_ your current directory.
 
 * Undo all local changes to `<file>` (reset file): `git checkout -- <file>`
 
