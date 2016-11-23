@@ -183,6 +183,7 @@ Legend of commit hash aliases:
   | Log of filenames only     | `git log    --name-only --pretty=format:   <branch>`|
   | Log of hash + filenames   | `git log    --name-only --pretty=format:%H <branch>`|
   | Summary of last commit +/-| `git diff --stat HEAD^!`                            |
+  | Log of hash, summary, file| `git log    --name-only --oneline`                  |
   | SHA1 hash of all commits  | `git log    --format=format:%H`                     |
   | SHA1 hash of last commit  | `git log -1 --format=format:%H`                     |
 
