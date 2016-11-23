@@ -189,7 +189,11 @@ Legend of commit hash aliases:
 
 ## Diffs
 
-* Compare staged file (already added): `git diff --staged <file>`
+  |Description                    | Command                    |
+  |:------------------------------|:---------------------------|
+  |Before add, all    file changes| `git diff`                 |
+  |Before add, single file changes| `git diff <file>`          |
+  |After  add, single file changes| `git diff --staged <file>` |
 
 * View Whitespace
 
