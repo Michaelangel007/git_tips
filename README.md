@@ -43,15 +43,6 @@
 |Global | `$(EDITOR) ~/.gitconfig` |
 |Project| `$(EDITOR) .git/config`  |
 
-### Git Ignore
-
-|Where  | Command                                                    |
-|:------|:-----------------------------------------------------------|
-|Global | `git config --global core.excludesfile ~/.gitignore_global`|
-|Project| `touch .gitignore && $(EDITOR) .gitignore`                 |
-
-* See templates @ https://github.com/github/gitignore
-
 ### Current config
 
 * Show currnt global configs: `git config --global -l`
@@ -107,6 +98,16 @@
     [user]
         name  = First Last
         email = First_Last@test.com
+
+### Ignore Files
+
+|Where  | Command                                                    |
+|:------|:-----------------------------------------------------------|
+|Global | `git config --global core.excludesfile ~/.gitignore_global`|
+|Project| `touch .gitignore && $(EDITOR) .gitignore`                 |
+
+* See templates @ https://github.com/github/gitignore
+
 
 ## Commit
 
