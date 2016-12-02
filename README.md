@@ -169,22 +169,24 @@ Legend of commit hash aliases:
 
 * Show
 
-  |Description                |Command                                                |Example|
-  |:--------------------------|:------------------------------------------------------|:------|
-  | File at specific commit   | `git show --format=format:%d <commit>:[<file>]`       | |
-  | File for last `#` commits | `git show -# <file>`                                  | |
-  | Log _all_ commits         | `git log`                                             | |
-  | Log _last `#`_ commits    | `git log -#`                                          | |
-  | Log summary               | `git log -2 --format=%B`                              |<pre>Merge branch 'master' of https://...<br><br>Move ...</pre>                                              |
-  | Log of filenames only     | `git log -2 --name-only --pretty=format:   [<branch>]`|<pre><br>README.md </pre>                                                                                    |
-  | Log of hash + filenames   | `git log -2 --name-only --pretty=format:%H [<branch>]`|<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br>README.md </pre>|
-  | Log of hash, summary, file| `git log -2 --name-only --oneline`                    |<pre>868b8a2 Merge branch 'master' of https://...<br>Move ...<br>README.md</pre>                             |
-  | SHA1 hash of last commit  | `git log -2 --format:%H`                              |<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98</pre>              |
-  | List of changed filenames | `git diff-tree --no-commit-id -r --name-status HEAD`  |<pre>M      README.md</pre>                                                                                  |
-  |                           | `git diff-tree --no-commit-id -r --name-status <commit>`| |
-  | ... 2nd last commit       | `git diff-tree --no-commit-id -r --name-status $(git log -2 --format=format:%H)`| |
-  | Summary of last commit +/-| `git diff --stat HEAD^!`                              |<pre> README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)</pre>                          |
-  | Summary of +/- changes    | `git show --stat <commit>`                            |<pre> commit b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br> Author: ...<br> Date:   ...<br> <br>    ...description...<br><br> README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)<br></pre>|
+  |Description                   |Command                                                  |Example|
+  |:-----------------------------|:--------------------------------------------------------|:------|
+  | Full Details of commit / File| `git show             <commit>:[<file>]`                |<pre>commit b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br>Author: ...<br>Date:   ...<br><br>    ...description...<br><br>diff --git a/README.md b/README.md<br>index 3e6c965..0b26797 100644<br>--- a/README.md<br>+++ b/README.md<br>@@ -182,10 +182,10 @@ Legend of commit hash aliases:</pre>|
+  | Diff only of commit / File   | `git show --format=%d <commit>:[<file>]`                |<pre>diff --git a/README.md b/README.md<br>index 3e6c965..0b26797 100644<br>--- a/README.md<br>+++ b/README.md<br>@@ -182,10 +182,10 @@ Legend of commit hash aliases:<br></pre>|
+  | Diffs for last `#` commits   | `git show -# <file>`                                    | |
+  | Summary of +/- changes       | `git show --stat <commit>`                              |<pre>commit b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br> Author: ...<br> Date:   ...<br> <br>    ...description...<br><br> README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)<br></pre>|
+  | Log _all_ commits            | `git log`                                               | |
+  | Log _last `#`_ commits       | `git log -#`                                            | |
+  | Log of summary only          | `git log -2 --format=%B`                                |<pre>Merge branch 'master' of https://...<br><br>Move ...</pre>                                              |
+  |**Type and filenames only**   | `git log -2 --name-status --format=        [<branch>]`  |<pre>M       README.md<br>M       README.md</pre>                                                            |
+  | List of filenames only       | `git log -2 --name-only   --format=        [<branch>]`  |<pre>README.md<br>README.md</pre>                                                                            |
+  | Log of hash + filenames      | `git log -2 --name-only --pretty=format:%H [<branch>]`  |<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br>README.md </pre>|
+  | Log of hash, summary, file   | `git log -2 --name-only --oneline`                      |<pre>868b8a2 Merge branch 'master' of https://...<br>Move ...<br>README.md</pre>                             |
+  | SHA1 hash of last commit     | `git log -2 --format:%H`                                |<pre>868b8a2dc91eed45242e8d4ebb3aabd5b1965c47<br>b88f8a267bc93ab43c440b81e5ac95e6943d5c98</pre>              |
+  | Status of changed files      | `git diff-tree --no-commit-id -r --name-status HEAD`    |<pre>M      README.md</pre>                                                                                  |
+  |                              | `git diff-tree --no-commit-id -r --name-status <commit>`|                                                                                                             |
+  | ... last commit              | `git diff-tree --no-commit-id -r --name-status $(git log -1 --format=format:%H)`|                                                                                     |
+  |**Summary of last commit +/-**| `git diff --stat HEAD^!`                                |<pre>README.md &#124; 2 +-<br> 1 file changed, 1 insertion(+), 1 deletion(-)</pre>                           |
 
   **Note:**
 
