@@ -43,6 +43,13 @@
 |Global | `$(EDITOR) ~/.gitconfig` |
 |Project| `$(EDITOR) .git/config`  |
 
+### Git Ignore
+
+|Where  | Command                                                    |
+|:------|:-----------------------------------------------------------|
+|Global | `git config --global core.excludesfile ~/.gitignore_global`|
+|Project| `touch .gitignore && $(EDITOR) .gitignore`                 |
+
 ### Current config
 
 * Show currnt global configs: `git config --global -l`
