@@ -49,6 +49,10 @@ On OSX `credential.helper` will be `osxkeychain` if you are using `Applications/
 
 See [Caching your GitHub password in Git](https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux)
 
+If you password has changed see [Updating credentials from the OSX Keychain](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)
+
+To delete your cached password: `git credential-osxkeychain erase`
+
 ### Current config
 
 * Show all current global configs: `git config --global -l`
