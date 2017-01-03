@@ -42,10 +42,16 @@
 |:------|:-------------------------|
 |Global | `$(EDITOR) ~/.gitconfig` |
 |Project| `$(EDITOR) .git/config`  |
+|Global  Password manager|`git config --global credential.helper`|
+|Project Password manager|`git config          credential.helper`|
+
+On OSX `credential.helper` will be `osxkeychain` if you are using `Applications/Utilites/Keychain Access` to cache your credentials.
+
+See [Caching your GitHub password in Git](https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux)
 
 ### Current config
 
-* Show currnt global configs: `git config --global -l`
+* Show all current global configs: `git config --global -l`
 
 
 ### Colors
@@ -140,6 +146,12 @@ Legend of commit hash aliases:
     git add <file>
     git commit --amend
     ```
+
+* Pull from Remote
+
+    |Description            | Command                                                         |
+    |:----------------------|:----------------------------------------------------------------|
+    |Ask username & password|`git pull -v` |
 
 * Push to Remote
 
