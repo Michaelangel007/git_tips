@@ -31,7 +31,8 @@
  or `git diff <branch1>:<file1> <branch2>:<file2>`
 * Delete **local** branch: `git branch -d <branch>`
 * Delete **remote** branch: `git push origin -D <branch>`
-* Merge single commit from different branch: `git cherry-pick <commit>`
+* **Merge** _all_ commits from _master_ into development branch _Foo_: `git checkout Foo; git merge master`
+* Merge _single_ commit from different branch: `git cherry-pick <commit>`
 * Rename branch: `git branch -mv <old> <new>`
 * Resolve conflict: `git merge <branch>`
 * Show branches: `git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit`
