@@ -26,15 +26,16 @@
 
 ## Branches
 
-* Create from existing files and switch to branch: `git checkout -b <branch> [<parent>]`
+* Create from existing files and switch to newbranch: `git checkout -b <newbranch> [<parent>]`
 * Compare file in different branchs: `git diff <branch1> <branch2> <file>`
  or `git diff <branch1>:<file1> <branch2>:<file2>`
-* Delete **local** branch: `git branch -d <branch>`
-* Delete **remote** branch: `git push origin -D <branch>`
+* Delete **local** branch: `git branch -d <delbranch>`
+* Delete **remote** branch: `git push origin -D <delbranch>`
 * **Merge** _all_ commits from _master_ into development branch _Foo_: `git checkout Foo; git merge master`
 * Merge _single_ commit from different branch: `git cherry-pick <commit>`
-* Rename branch: `git branch -mv <old> <new>`
-* Resolve conflict: `git merge <branch>`
+* Rename branch: `git branch -mv <oldbranch> <newbranch>`
+* Rename branch (lazy): `git push origin 'refs/heads/<oldbranch>:refs/heads/<newbranch>'
+* Resolve conflicts: `git merge <incbranch>`
 * Show branches: `git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit`
 
 ## Config
