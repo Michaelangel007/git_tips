@@ -2,12 +2,14 @@
 
 # Table of Contents
 
-* [Legend](https://github.com/Michaelangel007/git_tips#legend)
+* [Legend  ](https://github.com/Michaelangel007/git_tips#legend)
+* [Aliases ](https://github.com/Michaelangel007/git_tips#aliases)
 * [Branches](https://github.com/Michaelangel007/git_tips#branches)
-* [Config](https://github.com/Michaelangel007/git_tips#config)
-* [Commit](https://github.com/Michaelangel007/git_tips#commit)
-* [Diffs](https://github.com/Michaelangel007/git_tips#diffs)
-* [Preview](https://github.com/Michaelangel007/git_tips#preview)
+* [Config  ](https://github.com/Michaelangel007/git_tips#config)
+* [Commit  ](https://github.com/Michaelangel007/git_tips#commit)
+* [Diffs   ](https://github.com/Michaelangel007/git_tips#diffs)
+* [Preview ](https://github.com/Michaelangel007/git_tips#preview)
+
 
 ## Legend:
 
@@ -24,6 +26,21 @@
 |`<user>`     | Git Hub user                |
 |`<project>`  | Git Hub repository          |
 
+
+## Aliases
+
+`~/.gitconfig` is a plain-text file in INI format.
+
+i.e.
+
+```
+[alias]
+    tree = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white).%an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+```
+
+Then you can see a visual tree via `git tree`
+
+
 ## Branches
 
 * Create from existing files and switch to newbranch: `git checkout -b <newbranch> [<parent>]`
@@ -37,6 +54,7 @@
 * Rename branch (lazy): `git push origin 'refs/heads/<oldbranch>:refs/heads/<newbranch>'
 * Resolve conflicts: `git merge <incbranch>`
 * Show branches: `git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit`
+
 
 ## Config
 
@@ -192,6 +210,7 @@ Legend of commit hash aliases:
 
   |Description                   |Command                                                  |Example|
   |:-----------------------------|:--------------------------------------------------------|:------|
+  | Visual tree                  | See Aliases                                             | |
   | Full Details of commit / File| `git show             <commit>:[<file>]`                |<pre>commit b88f8a267bc93ab43c440b81e5ac95e6943d5c98<br>Author: ...<br>Date:   ...<br><br>    ...description...<br><br>diff --git a/README.md b/README.md<br>index 3e6c965..0b26797 100644<br>--- a/README.md<br>+++ b/README.md<br>@@ -182,10 +182,10 @@ Legend of commit hash aliases:</pre>|
   | Diff only of commit / File   | `git show --format=%d <commit>:[<file>]`                |<pre>diff --git a/README.md b/README.md<br>index 3e6c965..0b26797 100644<br>--- a/README.md<br>+++ b/README.md<br>@@ -182,10 +182,10 @@ Legend of commit hash aliases:<br></pre>|
   | Diffs for last `#` commits   | `git show -# <file>`                                    | |
