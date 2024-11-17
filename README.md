@@ -78,6 +78,41 @@ To delete your cached password: `git credential-osxkeychain erase`
 * Show all current global configs: `git config --global -l`
 
 
+### Editor
+
+For some reason my `%USERPROFILE%\.gitconfig` had this editor setting:
+
+```
+[core]
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+```
+
+Which was causing this error if I wanted to edit the global config via `git config --global --edit`:
+
+```
+hint: Waiting for your editor to close the file... "C:/Program Files (x86)/GitExtensions/GitExtensions.exe" fileeditor: C:/Program Files (x86)/GitExtensions/GitExtensions.exe: No such file or directory
+error: There was a problem with the editor '"C:/Program Files (x86)/GitExtensions/GitExtensions.exe" fileeditor'.
+```
+
+Solutions:
+
+1. The problem was [Git Extensions](https://gitextensions.github.io/) wasn't installed on this machine.
+
+2. Alternatively, set the environment variable `GIT_EDITOR`
+
+```
+    set GIT_EDITOR=gvim
+```
+
+3. Or to use a different editor, such as use [Notepad++](https://notepad-plus-plus.org/) replace with:
+
+```
+	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+```
+
+See this Stack Overflow [How do I make git use the editor of my choice for editing commit messages?
+](https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages/53901686#53901686)
+
 ### Colors
 
 * Color Names: `git log -1 --pretty=format:"%Credred%Creset %Cgreengreen%Creset %C(Yellow)yellow%Creset %Cblueblue%Creset %C(magenta)magenta%Creset %C(cyan)cyan%Creset %C(white)white%Creset"`
