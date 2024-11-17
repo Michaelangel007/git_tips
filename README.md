@@ -9,7 +9,7 @@
 * [Commit  ](https://github.com/Michaelangel007/git_tips#commit)
 * [Diffs   ](https://github.com/Michaelangel007/git_tips#diffs)
 * [Preview ](https://github.com/Michaelangel007/git_tips#preview)
-
+* [Tags    ](#tags)
 
 ## Legend:
 
