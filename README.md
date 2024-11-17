@@ -314,6 +314,13 @@ Note: Branch is usually `master`
 * [x] TODO list: use `* [x] Task`
 
 
+## Tags
+
+```
+    git tag -a -m "message" <tagname>
+    git push origin tag <tagname>
+```
+
 # See:
 
 * [Git Tips](https://github.com/Michaelangel007/git_tips)
