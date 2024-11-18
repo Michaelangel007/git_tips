@@ -107,8 +107,10 @@ Solutions:
 3. Or to use a different editor, such as use [Notepad++](https://notepad-plus-plus.org/) replace with:
 
 ```
-	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession -noPlugin
 ```
+
+(Alt. `-notabbar` for no tab bar)
 
 See this Stack Overflow [How do I make git use the editor of my choice for editing commit messages?
 ](https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages/53901686#53901686)
