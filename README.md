@@ -50,10 +50,12 @@ Then you can see a visual tree via `git tree`
 * Delete **remote** branch: `git push origin -D <delbranch>`
 * **Merge** _all_ commits from _master_ into development branch _Foo_: `git checkout Foo; git merge master`
 * Merge _single_ commit from different branch: `git cherry-pick <commit>`
+* Pull remote branch to local branch: `git fetch origin <remotebranch>`
 * Rename branch: `git branch -mv <oldbranch> <newbranch>`
-* Rename branch (lazy): `git push origin 'refs/heads/<oldbranch>:refs/heads/<newbranch>'
+* Rename branch (lazy): `git push origin 'refs/heads/<oldbranch>:refs/heads/<newbranch>'`
 * Resolve conflicts: `git merge <incbranch>`
 * Show branches: `git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit`
+* Switch to local branch: `git checkout <localbranch>`
 
 
 ## Config
