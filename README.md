@@ -251,7 +251,7 @@ Legend of commit hash aliases:
   * Best to use `git revert <commit>` and `git push`
   * Alternatively to keep a clean history:
 
-    ```
+    ```git
     git reset --hard <comit>
     git push --force origin <branch>
     ```
@@ -366,10 +366,22 @@ Note: Branch is usually `master`
 
 ## Tags
 
-```
+* Add Tag:
+
+    ```git
     git tag -a -m "message" <tagname>
     git push origin tag <tagname>
-```
+    ```
+  * Example: `git tag -a v1.1`
+
+* Remove Tag after push, Add new Tag
+
+    ```git
+    git tag -d <tagname>
+    git push origin :refs/tags/<tagname>
+    git tag <tagname> <commit>
+    git push origin <tagname>
+    ```
 
 # See:
 
