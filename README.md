@@ -243,6 +243,17 @@ Legend of commit hash aliases:
 
 * Move or Rename file: `git mv <old> <new>`
 
+
+* Undo commit after push
+
+  * Best to use `git revert <commit>` and `
+  * Alternatively to keep a clean history:
+
+```
+git reset --hard <comit>
+git push --force origin <branch>
+```
+
 * Show
 
   |Description                   |Command                                                  |Example|
