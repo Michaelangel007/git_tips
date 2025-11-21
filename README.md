@@ -248,13 +248,13 @@ Legend of commit hash aliases:
 
 * Undo commit after push
 
-  * Best to use `git revert <commit>` and `
+  * Best to use `git revert <commit>` and `git push`
   * Alternatively to keep a clean history:
 
-```
-git reset --hard <comit>
-git push --force origin <branch>
-```
+    ```
+    git reset --hard <comit>
+    git push --force origin <branch>
+    ```
 
 * Show
 
